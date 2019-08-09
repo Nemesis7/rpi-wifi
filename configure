@@ -117,7 +117,7 @@ network={
 EOF
 
 sudo systemctl restart dhcpcd
-sudo ifup wlan0
+#sudo ifup wlan0
 sudo /sbin/iw phy phy0 interface add uap0 type __ap
 
 # Configure `/etc/dnsmasq.conf`
