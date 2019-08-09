@@ -117,6 +117,7 @@ network={
 EOF
 
 sudo systemctl restart dhcpcd
+echo "!!!getting here"
 #sudo ifup wlan0
 sudo /sbin/iw phy phy0 interface add uap0 type __ap
 
