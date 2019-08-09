@@ -80,6 +80,7 @@ MAC_ADDRESS="$(cat /sys/class/net/wlan0/address)"
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y install dnsmasq hostapd
+sudo systemctl daemon-reload
 
 # Configure access point interface
 sudo bash -c 'cat > /etc/network/interfaces.d/ap' << EOF
